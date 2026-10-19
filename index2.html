@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COSMOS // Solar System & Deep Space OS</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+    <div id="login-overlay">
+        <div class="login-card">
+            <div class="login-badge">NASA // DEEP SPACE TELEMETRY</div>
+            <h2>Identify Yourself</h2>
+            <p>Enter your first name to intitalize the Solar System simulation</p>
+            <input type="text" id="pilotNameInput" placeholder="Enter Your Name..." autocomplete="off">
+            <button class="launch-btn" id="launchBtn">Launch Mission 🚀</button>
+            <p id="login-hint">Standard explorers get 8 planets. VIPs unlock Deep Space.</p>
+        </div>
+    </div>
+
+    <input type="radio" name="planet" id="p-sun" checked>
+    <input type="radio" name="planet" id="p-mercury">
+    <input type="radio" name="planet" id="p-venus">
+    <input type="radio" name="planet" id="p-earth">
+    <input type="radio" name="planet" id="p-mars">
+    <input type="radio" name="planet" id="p-jupiter">
+    <input type="radio" name="planet" id="p-saturn">
+    <input type="radio" name="planet" id="p-uranus">
+    <input type="radio" name="planet" id="p-neptune">
+    <input type="radio" name="planet" id="p-secret">
+
+    <div class="stars"></div>
+
+    <header>
+        <div class="brand">COSMOS // SOLAR SYSTEM OS</div>
+        <div class="pilot-status">
+            <span id="pilotTag">EXPLORER: GUEST</span>
+            <button class="switch-btn" id="switchUserBtn">Switch User 🔄</button>
+        </div>
+    </header>
+
+    <nav class="vertical-nav">
+        <label for="p-sun" class="nav-item"><div class="nav-dot"></div><span>00 The Sun</span></label>
+        <label for="p-mercury" class="nav-item"><div class="nav-dot"></div><span>01 Mercury</span></label>
+        <label for="p-venus" class="nav-item"><div class="nav-dot"></div><span>02 Venus</span></label>
+        <label for="p-earth" class="nav-item"><div class="nav-dot"></div><span>03 Earth</span> </label>
+        <label for="p-mars" class="nav-item"><div class="nav-dot"></div><span>04 Mars</span></label>
+        <label for="p-jupiter" class="nav-item"><div class="nav-dot"></div><span>05 Jupiter</span></label>
+        <label for="p-saturn" class="nav-item"><div class="nav-dot"></div><span>06 Saturn</span></label>
+        <label for="p-uranus" class="nav-item"><div class="nav-dot"></div><span>07 Uranus</span></label>
+        <label for="p-neptune" class="nav-item"><div class="nav-dot"></div><span>08 Neptune</span></label>
+
+        <label for="p-secret" class="nav-item" id="nav-secret">
+            <div class="nav-dot"></div><span id="secret-nav-label">09 VIP World</span>
+        </label>
+    </nav>
+
+    <main class="slides-container">
+
+        <section class="slide slide-sun">
+            <div class="planet-info">
+                <div class="planet-tag">Center of System // Yellow Dwarf Star ☀️</div>
+                <h1 class="planet-title">The Sun</h1>
+                <p class="planet-desc">The blazing heart of our solar system. A colossal sphere of glowing plasma that holds 99.8% of the solar system's total mass and drives the climate and life on Earth.</p>
+                <div class="stats-grid">
+                    <div class="stat-box"><span>Core Temp</span><strong>15M °C</strong></div>
+                    <div class="stat-box"><span>star Type</span><strong>G2V Star</strong></div>
+                    <div class="stat-box"><span>Planets</span><strong>08 Orbiting</strong></div>
+                </div>
+            </div>
+            <div class="planet-visual sun-visual"></div>
+        </section>
+
+        <section class="slide slide-mercury">
+            <div class="planet-info">
+                <div class="planet-tag">Ordit 01 // Sun-Scorched World</div>
+                <h1 class="planet-title">Mercury</h1>
+                <p class="planet-desc">The smallest and fastest planet in our solar system, zipping around the Sun every 88 Earth days with extreme temperature swings between day and night.</p>
+                <div class="stats-grid">
+                    <div class="stat-box"><span>Distance</span><strong>0.39 AU</strong></div>
+                    <div class="stat-box"><span>Year Length</span><strong>88 Days</strong></div>
+                    <div class="stat-box"><span>Moons</span><strong>00</strong></div>
+                </div>
+            </div>
+            <div class="planet-visual"></div>
+        </section>
+
+        <section class="slide slide-venus">
+            <div class="planet-info">
+                <div class="planet-tag">Orbit 02 // Golden Greenhouse</div>
+                <h1 class="planet-title">Venus</h1>
+                <p class="planet-desc">Wrapped in thick, toxic clouds of sulfuric acid that trap heat, making Venus the hottest planet in our solar system-and it spins backward compared to most planets.</p>
+                <div class="stats-grid">
+                    <div class="stat-box"><span>Distance</span><strong>0.72 AU</strong></div>
+                    <div class="stat-box"><span>Surface Temp</span><strong>475°C</strong></div>
+                    <div class="stat-box"><span>Moons</span><strong>00</strong></div>
+                </div>
+            </div>
+            <div class="planet-visual"></div>
+        </section>
+
+        <section class="slide slide-earth">
+            <div class="planet-info">
+                <div class="planet-tag">Orbit 03 // Home Harbour</div>
+                <h1 class="planet-title">Earth</h1>
+                <p class="planet-desc">Our home world-the only known planet in the universe with liquid oceans on its surface and a breathable atmosphere teeming with life.</p>
+                <div class="stats-grid">
+                    <div class="stat-box"><span>Distance</span><strong>1.00 Au</strong></div>
+                    <div class="stat-box"><span>Day length</span><strong>23.9 Hrs</strong></div>
+                    <div class="stat-box"><span>Moons</span><strong>01 (Luna)</strong></div>
+                </div>
+            </div>
+            <div class="planet-visual"></div>
+        </section>
+
+        <section class="slide slide-mars">
+            <div class="planet-info">
+                <div class="planet-tag">Orbit 04 // The Red Horizon</div>
+                <h1 class="planet-title">Mars</h1>
+                <p class="planet-desc">A cold, iron-oxide desert world home to Olympus Mons-a volcano three times taller then Mount Everest-and deep ancient canyon systems.</p>
+                <div class="stats-grid">
+                    <div class="stat-box"><span>Distance</span><strong>1.52 AU</strong></div>
+                    <div class="stat-box"><span>Day Length</span><strong>24.6 Hrs</strong></div>
+                    <div class="stat-box"><span>Moons</span><strong>02</strong></div>
+                </div>
+            </div>
+            <div class="planet-visual"></div>
+        </section>
+
+        <section class="slide slide-jupiter">
+            <div class="planet-info">
+                <div class="planet-tag">Orbit 05 // King of Giants</div>
+                <h1 class="planet-title">Jupiter</h1>
+                <p class="planet-desc">The largest planet in our solar system. Its swirling bands of clouds surround the Great Red Spot, a giant storm raging for centuries.</p>
+                <div class="stats-grid">
+                    <div class="stat-box"><span>Distance</span><strong>5.20 AU</strong></div>
+                    <div class="stat-box"><span>Day Length</span><strong>9.9 Hrs</strong></div>
+                    <div class="stat-box"><span>Moons</span><strong>95 Known</strong></div>
+                </div>
+            </div>
+            <div class="planet-visual"></div>
+        </section>
+
+        <section class="slide slide-saturn">
+            <div class="planet-info">
+                <div class="planet-tag">Orbit 06 // Ringed Jewel</div>
+                <h1 class="planet-title">Saturn</h1>
+                <p class="planet-desc">Famous for its breathtaking system of icy rings that stretch across hundered of thousands of kilometers through deep space.</p>
+                <div class="stats-grid">
+                    <div class="stat-box"><span>Distance</span><strong>9.58 AU</strong></div>
+                    <div class="stat-box"><span>Day Length</span><strong>10.7 Hrs</strong></div>
+                    <div class="stat-box"><span>Moons</span><strong>146 Known</strong></div>
+                </div>
+            </div>
+            <div class="planet-visual">
+                <div class="planet-ring"></div>
+            </div>
+        </section>
+
+        <section class="slide slide-uranus">
+          <div class="planet-info">
+            <div class="planet-tag">Orbit 07 // Sideways Ice Giant</div>
+            <h1 class="planet-title">Uranus</h1>
+            <p class="planet-desc">An icy cyan giant that rotates at a nearly 90-degree angle from its orbit, making it appear to roll around the Sun on its side.</p>
+            <div class="stats-grid">
+                <div class="stat-box"><span>Distance</span><strong>19.2 AU</strong></div>
+                <div class="stat-box"><span>Orbit Time</span><strong>84 Years</strong></div>
+                <div class="stat-box"><span>Moons</span><strong>28 Known</strong></div>
+            </div>
+          </div>
+          <div class="planet-visual">
+            <div class="planet-ring uranus-ring"></div>
+          </div>
+        </section>
+
+        <section class="slide slide-neptune">
+            <div class="planet-info">
+                <div class="planet-tag">Orbit 08 // Supersonic Winds</div>
+                <h1 class="planet-title">Neptune</h1>
+                <p class="planet-desc">Dark, cold and whipped by winds, giant Neptune is the farthest major planet orbiting our sun-over 30 times farther out then Earth.</p>
+                <div class="stats-grid">
+                    <div class="stat-box"><span>Distance</span><strong>30.1 Au</strong></div>
+                    <div class="stat-box"><span>Orbit Time</span><strong>165 Years</strong></div>
+                    <div class="stat-box"><span>Moons</span><strong>16 Known</strong></div>
+                </div>
+            </div>
+            <div class="planet-visual"></div>
+        </section>
+
+        <section class="slide slide-secret" id="secret-slide">
+            <div class="planet-info">
+                <div class="planet-tag" id="secret-tag">Beyond Orbit 08 // Deep Space VIP Sector</div>
+                <h1 class="planet-title" id="secret-title">Nebula X</h1>
+                <p class="planet-desc" id="secret-desc"></p>
+                <div class="stats-grid">
+                    <div class="stat-box"><span id="label-1">Vibe Level</span><strong id="stat-1">100%</strong></div>
+                    <div class="stat-box"><span id="label-2">Rarity</span><strong id="stat-2">1 in 8 Billion</strong></div>
+                    <div class="stat-box"><span>Created By</span><strong>Aditya J. ✨</strong></div>
+                </div>
+            </div>
+            <div class="planet-visual">
+                <div class="planet-ring secret-ring" id="secret-ring"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script2.js"></script>
+</body>
+</html>
